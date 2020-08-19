@@ -1,0 +1,32 @@
+Ryan Rosiak
+Command Line Poll App
+8/12/20
+
+Project Description:
+This project is a command line polling app (similar to straw poll). The
+program uses PostgreSQL to manage 3 large databases including open 
+polls, options, and votes. The entire database is managed and accessed
+using the object oriented approach and allows users to create polls, vote
+on existing polls, and select winners for polls based off tallied votes.
+Some interesting features included are analytics for each poll as well as
+timestamps for when votes are submitted.
+
+Dependencies:
+**These are specified in requirements.txt but will also be specified here
+ - psycopg2-binary
+ - python-dotenv
+ - python 3.6 or above
+
+To install dependencies:
+    "pip3 install (dependency listed above)"
+
+How to run:
+To run this program, you simply must run the app.py script. There will be
+a .env.example file provided if you would like enter the DATABASE_URL 
+in that file instead of on the spot on the command line. Once the DATABASE_URL
+is registered, the menu will run and full use of the app will be available. 
+(This app was tested using a free postgresql service called elephantsql)
+
+Sample execution:
+ "python3 app.py"
+
